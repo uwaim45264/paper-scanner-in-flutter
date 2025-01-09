@@ -1,0 +1,59 @@
+name: paper_scanner_app
+description: A Flutter app to scan papers and manage roll number sequences.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management, navigation, and UI
+  document_scanner_kit: ^0.1.0+1
+  flutter_bloc: ^8.1.1
+  document_scanner_kit_platform_interface: ^0.1.0+1
+  # Animation package for splash screen animation
+  animated_text_kit: ^4.2.1
+  pdf: ^3.11.1
+  flutter_document_scanner: ^1.1.2
+  # Document scanner package
+  flutter_doc_scanner: ^0.0.8
+  share_plus: ^6.0.0
+  permission_handler: ^11.3.1
+  # Image picker if needed for alternative solutions or additional features
+  image_picker: ^0.8.5+3
+  image: ^4.2.0
+  # Path provider to save images to local storage
+  path_provider: ^2.0.11
+  provider: ^6.0.5
+  animations: ^2.0.0
+  flutter_document_scan_sdk: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/ETEA-new.png"
+  # Linting
+  #flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Specify the assets used in the application (if any).
+  assets:
+    - assets/images/ETEA-new.png
+
+  # Add any fonts you might want to use (if any).
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
